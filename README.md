@@ -1,35 +1,40 @@
 # PyInstaller GUI
 
-This is a graphical user interface (GUI) program built with Tkinter for converting Python scripts into standalone executables using PyInstaller. The program provides a user-friendly interface for selecting a script, configuring conversion options, and running the conversion process.
+A graphical user interface (GUI) for converting Python scripts into standalone executables using PyInstaller.
 
-## Prerequisites
+## Requirements
 
-- Python 3.x installed
-- Required packages: `tkinter`, `subprocess`, `os`, `threading`, `shutil`
+- Python 3.x
+- Tkinter
 
 ## Usage
 
-1. Run the program by executing the script `PyInstallerGUI.py`.
-2. The PyInstaller GUI window will appear.
-3. Select the Python script you want to convert by clicking the "Browse" button or manually entering the path in the "Script Path" field.
-4. Optionally, check the "Show Command Window" checkbox if you want to see the command window during the Python Script .exe execution. By changing the .py to a .pyw before conversion.
-5. Click the "Convert" button to start the conversion.
-6. The output of the conversion process will be displayed in a separate window titled "Command Output". You can track the progress and see any error messages in this window.
-7. Once the conversion is complete, a message will be shown indicating the success or failure of the conversion.
-8. If the conversion was successful, a message box will display the path of the generated executable. You can choose to open the file by clicking the "Open File" button.
+1. Clone the repository or download the `PyInstallerGUI.py` file.
 
-## Important Notes
+2. Run the script using Python:
 
-- Make sure you have installed all the required packages before running the program.
-- PyInstaller must be installed and accessible in your system's environment variables.
-- The program assumes that the `pyinstaller` command is available globally.
-- The converted executable will be saved with the same name as the input script but with the `.exe` extension.
-- By default, the program creates a single-file executable without a console window. You can change this behavior by checking the "Show Command Window" checkbox.
+   ```bash
+   python PyInstallerGUI.py
+   ```
 
-## Contributing
+3. The PyInstaller GUI window will open.
 
-Contributions are welcome! If you find any issues or want to enhance the program, feel free to create a pull request.
+4. Enter the path to the script you want to convert in the "Script Path" field, or click the "Browse" button to select the script file using a file dialog.
+
+5. Check the "Show Command Window" checkbox if you want to display the command window during the conversion process.
+
+6. Check the "Use Custom Icon" checkbox if you want to specify a custom icon for the executable. Click the "Browse Icon" button to select an icon file using a file dialog.
+
+7. Click the "Convert" button to start the conversion process.
+
+8. If a script file is not selected or an error occurs, an error message will be displayed.
+
+9. During the conversion process, the command output will be shown in a separate window titled "Command Output". The output will also be appended to the GUI window.
+
+10. Once the conversion is complete, a success message will be displayed, and the path to the generated executable will be shown. Clicking "Open File" will open the file explorer with the executable file selected.
+
+Note: This GUI uses PyInstaller as the underlying tool for converting the script to an executable. Make sure PyInstaller is installed and available in your system's `PATH`.
 
 ## License
 
-This program is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
