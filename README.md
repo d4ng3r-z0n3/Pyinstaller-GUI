@@ -12,7 +12,7 @@ This is a graphical user interface (GUI) program built with Tkinter for converti
 1. Run the program by executing the script `PyInstallerGUI.py`.
 2. The PyInstaller GUI window will appear.
 3. Select the Python script you want to convert by clicking the "Browse" button or manually entering the path in the "Script Path" field.
-4. Optionally, check the "Show Command Window" checkbox if you want to see the command window during the Python Script .exe execution.
+4. Optionally, check the "Show Command Window" checkbox if you want to see the command window during the Python Script .exe execution. By changing the .py to a .pyw before conversion.
 5. Click the "Convert" button to start the conversion.
 6. The output of the conversion process will be displayed in a separate window titled "Command Output". You can track the progress and see any error messages in this window.
 7. Once the conversion is complete, a message will be shown indicating the success or failure of the conversion.
