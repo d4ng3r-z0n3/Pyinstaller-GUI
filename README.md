@@ -14,7 +14,7 @@ A graphical user interface (GUI) for converting Python scripts into standalone e
 2. Run the script using Python:
 
    ```bash
-   python PyInstallerGUI.py
+   python PyInstallerGUI.pyc
    ```
 
 3. The PyInstaller GUI window will open.
